@@ -17,9 +17,14 @@ const Services = ({ title, imageUrl, list}) => {
               {imageUrl}
             </div>
 
+            {/* List */}
             <div className='px-8 py-8'>
               <ul className='list-disc list-inside'>
-                {list}
+                {Array.isArray(list) && list.length > 0 ? (list.map((item, index) => (<li key={index} className='text-lg'>{item}</li>
+                ))
+              ) : (
+                <p>No services listed</p>
+              )}
               </ul>
             </div>
 
