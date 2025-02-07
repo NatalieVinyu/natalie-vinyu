@@ -6,7 +6,7 @@ const Homepage = () => {
     <div className='flex items-center justify-center min-h-screen'>
 
         <div className='container'>
-          <div class="grid grid-flow-col grid-rows-3 gap-4">
+          <div class="grid grid-flow-col grid-rows-2 gap-4">
             <div class="row-span-3 ...">
               <img src="/IMG_2575.jpeg" alt="Natalie Vinyu" className='rounded-lg shadow-lg w-80 max-w-sm' />
             </div>
