@@ -14,7 +14,7 @@ const Services = ({ title, imageUrl, list}) => {
             </div>
 
             <div>
-              {imageUrl}
+              <img src={imageUrl} alt={title} />
             </div>
 
             {/* List */}

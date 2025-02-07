@@ -6,6 +6,12 @@ import Contact from './contact/page.jsx';
 import Footer from './footer/page.jsx';
 
 export default function Home() {
+  const servicesList = [
+    "Email management",
+    "Scheduling Assistance",
+    "Document Handling"
+  ];
+
   return (
     <div>
       <Navbar />
@@ -15,7 +21,7 @@ export default function Home() {
       <Services 
       title="Email Management"
       imageUrl="/Calendar-management-800x440.webp"
-      list=""
+      list={servicesList}
       />
 
       <Contact />
