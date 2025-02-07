@@ -2,8 +2,7 @@ import React from 'react'
 
 const Services = ({ title, imageUrl, list}) => {
   return (
-    <div id='services' className='container mx-auto pt-16'>
-      <h1 className='text-5xl'>Services I offer</h1>
+    <div id='services' className='container mx-auto pt-16 col'>
 
       <div className='flex align-center items-center'>
         <div className='max-w-sm rounded overflow-hidden shadow-lg bg-white m-4'>

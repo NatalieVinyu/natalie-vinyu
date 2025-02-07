@@ -6,11 +6,18 @@ import Contact from './contact/page.jsx';
 import Footer from './footer/page.jsx';
 
 export default function Home() {
-  const servicesList = [
+  const servicesList1 = [
     "Email management",
     "Scheduling Assistance",
     "Document Handling"
   ];
+
+  const servicesList2 = [
+    "1",
+    "2",
+    "3",
+    "4"
+  ]
 
   return (
     <div>
@@ -21,7 +28,12 @@ export default function Home() {
       <Services 
       title="Email Management"
       imageUrl="/Calendar-management-800x440.webp"
-      list={servicesList}
+      list={servicesList1}
+      />
+      <Services
+      title="Administrative"
+      imageUrl="/Calendar-management-800x440.webp" 
+      list={servicesList2}
       />
 
       <Contact />
