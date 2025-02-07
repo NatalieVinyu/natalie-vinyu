@@ -1,35 +1,25 @@
 import React from 'react'
-import Card from '../card/page';
 
 const Services = () => {
   return (
-      <div id='mywork' className='container mx-auto min-h-screen '>
-        <h1 className='text-4xl font-bold mb-6 pt-16'>Card Example</h1>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-            <Card 
-              title='Card Title 1'
-              content='This is just an example for the projects i have done'
-              imageUrl='coming.soon'
-            />
-            <Card 
-            title='Card Title 2'
-            content='This is just an example for the projects i have done'
-            imageUrl='coming.soon'
-            />
-            <Card 
-            title='Card Title 3'
-            content='This is just an example for the projects i have done'
-            imageUrl='coming.soon'
-            />
-             <Card 
-            title='Card Title 4'
-            content='This is just an example for the projects i have done'
-            imageUrl='coming.soon'
-            />             
+    <div id='services' className='container mx-auto pt-16'>
+      <h1 className='text-5xl'>Services I offer</h1>
+
+      <div className='flex align-center items-center'>
+        <div className='max-w-sm rounded overflow-hidden shadow-lg bg-white m-4'>
+          <div className='px-6 py-4'>
+            <div className='font-bold text-xl mb-2'>
+              card
+            </div>
+
           </div>
+        </div>
+
       </div>
-    
+
+    </div>
   )
 }
 
-export default Services;
+export default Services
+
