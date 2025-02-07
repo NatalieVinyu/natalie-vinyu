@@ -11,9 +11,17 @@ export default function Home() {
       <Navbar />
       <Homepage />
       <About />
-      <Services />
+
+      <Services 
+      title="Email Management"
+      imageUrl=""
+      list=""
+      />
+      
       <Contact />
       <Footer />
+
+      
     </div>
     
   );
