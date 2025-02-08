@@ -2,10 +2,10 @@ import React from 'react'
 
 const Services = ({ title, imageUrl, list}) => {
   return (
-    <div id='services' className='container mx-auto pt-16 col'>
+    <div id='services' className='container mx-auto pt-16 flex flex-row'>
 
-      <div className='flex align-center items-center'>
-        <div className='max-w-sm rounded overflow-hidden shadow-lg bg-white m-4'>
+      <div className=''>
+        <div className='max-w-sm rounded shadow-lg bg-white m-4 '>
 
           <div>
             <div className='text-center font-bold text-2xl mb-2 px-6 py-4'>
