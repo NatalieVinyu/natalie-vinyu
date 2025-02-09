@@ -2,7 +2,7 @@ import React from 'react'
 
 const Services = ({ title, imageUrl, list}) => {
   return (
-    <div id='services' className='container mx-auto pt-16 flex flex-row'>
+    <div id='services' className='container mx-auto pt-16'>
 
       <div className=''>
         <div className='max-w-sm rounded shadow-lg bg-white m-4 '>
