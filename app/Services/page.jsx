@@ -4,7 +4,7 @@ const Services = ({ title, imageUrl, list}) => {
   return (
     <div id='services' className='container mx-auto pt-16'>
 
-      <div className=''>
+      <div className='flex align-center items-center'>
         <div className='max-w-sm rounded shadow-lg bg-white m-4 '>
 
           <div>
