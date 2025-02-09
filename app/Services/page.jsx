@@ -7,7 +7,7 @@ const Services = ({ title, imageUrl, list}) => {
       <div className='flex align-center items-center'>
         <div className='max-w-sm rounded shadow-lg bg-white m-4 '>
 
-          <div>
+          
             <div className='text-center font-bold text-2xl mb-2 px-6 py-4'>
               {title}
             </div>
@@ -27,7 +27,7 @@ const Services = ({ title, imageUrl, list}) => {
               </ul>
             </div>
 
-          </div>
+          
         </div>
 
       </div>
