@@ -17,6 +17,13 @@ export default function Home() {
     "2",
     "3",
     "4"
+  ];
+
+  const servicesList3 = [
+    "Flights Bookings & Accommodation",
+    "Car Rentals",
+    "Business Trip Scheduling",
+    "Personalized Itineraries"
   ]
 
   return (
@@ -34,6 +41,11 @@ export default function Home() {
       title="Administrative"
       imageUrl="/Calendar-management-800x440.webp" 
       list={servicesList2}
+      />
+      <Services
+      title="Travel Management"
+      imageUrl="/Calendar-management-800x440.webp" 
+      list={servicesList3}
       />
 
       <Contact />

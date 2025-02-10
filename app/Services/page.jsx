@@ -3,15 +3,18 @@ import React from 'react'
 const Services = ({ title, imageUrl, list}) => {
   return (
     <div id='services' className='container mx-auto pt-16'>
+        {/* Grid container to create a responsive layout */}
+      <div className='grid flex flex-wrap justify-center items-center gap-6'>
 
-      <div className='flex align-center items-center'>
-        <div className='max-w-sm rounded shadow-lg bg-white m-4 '>
+        {/* Card Wrapper */}
+        <div className='max-w-sm rounded shadow-lg bg-white m-4 flex flex-col'>
 
-          
+            {/* Title */}
             <div className='text-center font-bold text-2xl mb-2 px-6 py-4'>
               {title}
             </div>
 
+            {/* Image */}
             <div>
               <img src={imageUrl} alt={title} />
             </div>
