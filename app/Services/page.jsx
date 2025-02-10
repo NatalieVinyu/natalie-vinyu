@@ -4,7 +4,7 @@ const Services = ({ title, imageUrl, list}) => {
   return (
     <div id='services' className='container mx-auto pt-16'>
         {/* Grid container to create a responsive layout */}
-      <div className='grid flex flex-wrap justify-center items-center gap-6'>
+      <div className='flex flex-col align-center items-center'>
 
         {/* Card Wrapper */}
         <div className='max-w-sm rounded shadow-lg bg-white m-4 flex flex-col'>

@@ -24,7 +24,7 @@ export default function Home() {
     "Car Rentals",
     "Business Trip Scheduling",
     "Personalized Itineraries"
-  ]
+  ];
 
   return (
     <div>
@@ -32,27 +32,30 @@ export default function Home() {
       <Homepage />
       <About />
 
-      <Services 
-      title="Email Management"
-      imageUrl="/Calendar-management-800x440.webp"
-      list={servicesList1}
-      />
-      <Services
-      title="Administrative"
-      imageUrl="/Calendar-management-800x440.webp" 
-      list={servicesList2}
-      />
-      <Services
-      title="Travel Management"
-      imageUrl="/Calendar-management-800x440.webp" 
-      list={servicesList3}
-      />
+      {/* Services Section - Grid Layout */}
+      <section id="services" className="container mx-auto pt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <Services 
+            title="Email Management"
+            imageUrl="/Calendar-management-800x440.webp"
+            list={servicesList1}
+          />
+          <Services
+            title="Administrative"
+            imageUrl="/Calendar-management-800x440.webp" 
+            list={servicesList2}
+          />
+          <Services
+            title="Travel Management"
+            imageUrl="/Calendar-management-800x440.webp" 
+            list={servicesList3}
+          />
+        </div>
+      </section>
 
       <Contact />
       <Footer />
-
-      
     </div>
-    
   );
-};
+}
+
