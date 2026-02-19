@@ -1,18 +1,24 @@
 import React from 'react'
+import { CodeXml, Sparkles, Rocket } from 'lucide-react';
+
+
 
 function About() {
   const highlights = [
     { 
       title: "Clean Code",
       description: "Writing maintainable, scalable code that follows best practices",
+      icon: <CodeXml />
     },
     {
       title: "Modern Design",
       description: "Creating beautiful interfaces with attention detail",
+      icon: <Sparkles/>
     },
     {
       title: "Performance",
       description: "Building fast, optimized applications for the best user experience",
+      icon: <Rocket/>
     }
   ]
 
@@ -35,6 +41,11 @@ function About() {
           <div className='flex flex-col gap-6'>
             {highlights.map((item, index) => (
             <div className='flex border-2 border-fuchsia-300 rounded-xl p-5' key={index}>
+              
+              {/* LUCIDE REACT ICONS */}
+              <div className='bg-fuchsia-100 rounded-xl content-center text-2xl p-4 mr-4'>
+                <p>{item.icon}</p>
+              </div>
                 
               <div>
                 <h3 className='text-lg font-semibold'>{item.title}</h3>
