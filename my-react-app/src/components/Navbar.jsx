@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-     <div className='fixed w-full bg-gray-100 bg-transparent bg-opacity-25 backdrop-blur-md shadow-lg p-8 z-10 top-0'>
+     <div className='w-full bg-transparent backdrop-blur-md shadow-lg p-4 z-10 top-0'>
       <nav className='container'>        
           <ul className='flex space-x-10 justify-end'>
             <li>
