@@ -13,19 +13,18 @@ function About() {
     {
       title: "Modern Design",
       description: "Creating beautiful interfaces with attention detail",
-      icon: <Sparkles/>
+      icon: <Sparkles />
     },
     {
       title: "Performance",
       description: "Building fast, optimized applications for the best user experience",
-      icon: <Rocket/>
+      icon: <Rocket />
     }
   ]
 
   return (
     <div className='bg-fuchsia-50'>
       <section id='about' className='flex flex-col items-center max-w-7xl mx-auto px-8 py-24 '>
-        <div></div>
         <div className='pb-6'>
           <h1 className='text-4xl font-bold pb-2'>About Me</h1>
           <div className='w-full h-1 bg-fuchsia-200 rounded-full'></div>
