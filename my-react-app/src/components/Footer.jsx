@@ -5,8 +5,8 @@ import { FiGithub, FiLinkedin } from 'react-icons/fi'
 function Footer() {
   return (
     <div>
-      <footer className='py-12 px-6 border-t border-fuchsia-200 overflow-hidden bg-fuchsia-50'>
-        <div className='max-w-6xl mx-auto relative'>
+      <footer className='py-12 px-6 border-fuchsia-200 bg-fuchsia-50'>
+        <div className='max-w-6xl mx-auto'>
           <div className='flex flex-col md:flex-row items-center justify-between gap-6'>
             <div className='text-center md:text-left'>
               <h3 className='text-2xl font-bold mb-2'>Natalie Vinyu</h3>
