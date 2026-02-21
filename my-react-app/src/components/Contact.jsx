@@ -43,25 +43,24 @@ function Contact() {
         {/* Form */}
         <form className='border-2 p-8'>
           <div className='grid md:grid-cols-2 gap-6'>
-            <div>
-              <label htmlFor="">Name</label>
+            <div className='mb-6'>
+              <label htmlFor="" className='text-sm font-medium mb-2'>Name</label>
               <input type="text" className='w-full px-4 py-3 border rounded-lg' placeholder='Full Name' />
             </div>
 
-            <div>
-              <label htmlFor="">Email</label>
+            <div className='mb-6'>
+              <label htmlFor="email" className='text-sm font-medium mb-2'>Email</label>
               <input type="text" className='w-full px-4 py-3 border rounded' placeholder='your.email@example.com' />
             </div>
           </div>
 
-          <div>
+          <div className='mb-2'>
             <label htmlFor="message" className='block text-sm font-medium mb-2'>Message</label>
-            <textarea name="message" placeholder='How can I help you?' className='border px-4 py-3' id=""></textarea>
+            <textarea name="message" placeholder='How can I help you?' className='w-full border rounded px-4 py-3' id="message" rows={5}></textarea>
           </div>
-          <button type='submit' className='w-full border'>Send Message</button>
+          <button type='submit' className='w-full border rounded p-2 cursor-pointer'>Send Message</button>
         </form>
       </section>
-
     </div>
   )
 }
