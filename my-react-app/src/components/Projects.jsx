@@ -42,7 +42,7 @@ function Projects() {
           <div className='grid md:grid-cols-3 gap-4'>
             {myprojects.map((item, index) => (
               <div className='border-2 border-fuchsia-300 rounded-xl p-8' key={index}>
-                <img src={item.image} alt={item.title} />
+                <img src={item.image} alt={item.title} className='transition duration-700 ease-in-out transform hover:scale-105' />
 
                 <h3 className='text-2xl font-bold pt-4'>{item.title}</h3>
                 <p className='pt-4'>{item.description}</p>
@@ -54,12 +54,12 @@ function Projects() {
                   ))}</ul>
                 </div>
 
-                <div className='flex flex-col gap-2 pt-8'>
-                  <button className='border-2 border-fuchsia-300 rounded-xl w-40 py-2'>
+                <div className='flex gap-4 pt-8'>
+                  <button className='w-full flex items-center justify-center gap-2 border-2 border-fuchsia-300 rounded-xl py-2'>
                     <Code />
                     <span>Code</span>
                   </button>
-                  <button className='border-2 border-fuchsia-300 rounded-xl w-40 py-2'>
+                  <button className='w-full flex items-center justify-center gap-2 border-2 border-fuchsia-300 rounded-xl py-2'>
                     <ExternalLink />
                     <span>Demo</span>
                   </button>

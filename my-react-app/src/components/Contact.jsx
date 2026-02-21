@@ -3,7 +3,7 @@ import { Mail, MapPin, Send} from 'lucide-react'
 
 function Contact() {
   return (
-    <div className='max-w-7xl mx-auto px-8 py-24'>
+    <div className='max-w-4xl mx-auto px-8 py-16'>
       <section id="contact">
         <div className='flex flex-col items-center'>
           <div className='text-2xl'>Get In Touch</div>
