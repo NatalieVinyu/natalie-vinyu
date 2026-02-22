@@ -10,30 +10,30 @@ function Footer() {
           <div className='flex flex-col md:flex-row items-center justify-between gap-6'>
             <div className='text-center md:text-left'>
               <h3 className='text-2xl font-bold mb-2'>Natalie Vinyu</h3>
-              <p className='text-sm'>Building digital experiences</p>
+              <p className='text-sm text-gray-600'>Building digital experiences</p>
             </div>
 
             <div className='flex gap-4'>
               <a 
                 href="https://github.com/NatalieVinyu"
                 target='_blank'
-                className='border border-fuchsia-300 p-4 rounded flex items-center justify-center'
+                className='border border-fuchsia-300 p-2 rounded flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-110 hover:border-fuchsia-400 hover:text-fuchsia-400 hover:border-2'
                >
-                <FiGithub />
+                <FiGithub className='w-4 h-4' />
               </a>
               <a 
                 href="https://www.linkedin.com/in/natalie-vinyu"
                 target='_blank'
-                className='border border-fuchsia-300 p-4 rounded flex items-center justify-center'
+                className='border border-fuchsia-300 p-2 rounded flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-110 hover:border-fuchsia-400 hover:text-fuchsia-400 hover:border-2'
                >
-                <FiLinkedin />
+                <FiLinkedin className='w-4 h-4' />
               </a>
               <a 
                 href="mailto:natalievinyu@gmail.com"
                 target='_blank'
-                className='border border-fuchsia-300 p-4 rounded flex items-center justify-center'
+                className='border border-fuchsia-300 p-2 rounded flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-110 hover:border-fuchsia-400 hover:text-fuchsia-400 hover:border-2'
                >
-                <Mail />
+                <Mail className='w-4 h-4'/>
               </a>
             </div>
           </div>
