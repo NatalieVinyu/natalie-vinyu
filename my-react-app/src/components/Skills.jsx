@@ -4,15 +4,15 @@ function Skills() {
   const skills = [
     {
       title: "Frontend",
-      skills: ["React", "Typescript", "Next.js", "TailwindCSS", "HTML5", "CSS3"]
+      skills: ["React", "JavaScript", "Next.js", "TailwindCSS", "HTML5", "CSS3", "Responsive Design"]
     },
     {
       title: "Backend",
-      skills: ["SQL", "Node.js"]
+      skills: ["SQL", "Node.js", "APIs"]
     },
     {
       title: "Tools & Others",
-      skills: ["VS Code", "Git"]
+      skills: ["VS Code", "Git & GitHub", "Chrome DevTools"]
     }
   ]
 
@@ -25,12 +25,12 @@ function Skills() {
 
       <div className='grid md:grid-cols-3'>
         {skills.map((item, index) => (
-          <div className='border-2 border-fuchsia-300 rounded-xl m-10 p-2' key={index}>
+          <div className='border-2 border-fuchsia-300 rounded-xl m-10 p-2 shadow-lg' key={index}>
             <h3 className='text-2xl font-bold text-center pt-4'>{item.title}</h3>
 
             <ul className='flex flex-wrap space-x-4 list-none justify-center p-4 '>
               {item.skills.map((skill, i) => (
-              <div className='border-1 border-fuchsia-300 bg-fuchsia-50 rounded-full m-2 p-3'>
+              <div className='border border-fuchsia-300 bg-fuchsia-50 rounded-full m-2 p-3 transition duration-300 ease-in-out transform hover:scale-125 hover:border-fuchsia-400 hover:shadow-lg' key={i}>
                 <li key={i}>{skill}</li>
               </div>
               ))}</ul>
