@@ -15,7 +15,7 @@ function Contact() {
         </div>
 
         <div className='grid md:grid-cols-3 gap-6 my-12'>
-          <div className='flex items-start gap-6 border-2 border-fuchsia-300 rounded p-4'>
+          <div className='flex items-start gap-6 border-2 border-fuchsia-300 rounded shadow-lg p-4'>
             <Mail className='mt-4'/>
             <div>
               <h3 className='font-semibold text-2xl'>Email</h3>
@@ -23,7 +23,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className='flex items-start gap-6 border-2 border-fuchsia-300 rounded p-4'>
+          <div className='flex items-start gap-6 border-2 border-fuchsia-300 rounded shadow-lg p-4'>
             <MapPin className='mt-4'/>
             <div>
               <h3 className='font-semibold text-2xl'>Location</h3>
@@ -31,7 +31,7 @@ function Contact() {
             </div>            
           </div>
 
-          <div className='flex items-start gap-6 border-2 border-fuchsia-300 rounded p-4'>
+          <div className='flex items-start gap-6 border-2 border-fuchsia-300 rounded shadow-lg p-4'>
             <Send className='mt-4'/>
             <div>
               <h3 className='font-semibold text-2xl'>Response time</h3>
@@ -41,24 +41,24 @@ function Contact() {
         </div>
 
         {/* Form */}
-        <form id='' className='border-2 border-fuchsia-200 rounded-xl p-8 mb-12'>
+        <form id='' className='border-2 border-fuchsia-200 rounded-xl shadow-lg p-8 mb-12'>
           <div className='grid md:grid-cols-2 gap-6'>
             <div className='mb-6'>
               <label htmlFor="" className='text-sm font-medium mb-2'>Name</label>
-              <input type="text" className='w-full px-4 py-3 bg-fuchsia-100 rounded-lg' placeholder='Full Name' />
+              <input type="text" className='w-full px-4 py-3 bg-fuchsia-100 rounded-lg shadow-sm' placeholder='Full Name' />
             </div>
 
             <div className='mb-6'>
               <label htmlFor="email" className='text-sm font-medium mb-2'>Email</label>
-              <input type="text" className='w-full px-4 py-3 bg-fuchsia-100 rounded' placeholder='your.email@example.com' />
+              <input type="text" className='w-full px-4 py-3 bg-fuchsia-100 rounded-lg shadow-sm' placeholder='your.email@example.com' />
             </div>
           </div>
 
           <div className='mb-2'>
             <label htmlFor="message" className='block text-sm font-medium mb-2'>Message</label>
-            <textarea name="message" placeholder='How can I help you?' className='w-full bg-fuchsia-100 rounded px-4 py-3' id="message" rows={5}></textarea>
+            <textarea name="message" placeholder='How can I help you?' className='w-full bg-fuchsia-100 rounded-lg shadow-sm px-4 py-3' id="message" rows={5}></textarea>
           </div>
-          <button type='submit' className='w-full bg-fuchsia-300 rounded p-2 cursor-pointer'>Send Message</button>
+          <button type='submit' className='w-full bg-fuchsia-300 rounded shadow-lg p-2 cursor-pointer'>Send Message</button>
         </form>
       </section>
     </div>
