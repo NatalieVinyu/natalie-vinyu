@@ -32,8 +32,8 @@ function About() {
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-16'>
           <div className='flex flex-col items-start space-y-4'>
-            <p>I'm a web developer with a passion for creating exceptional digital experiences. My journey in web development started with a curiosity about how things work on the web, and has evolved into a career focused on building impactful solutions.</p>
-            <p>I specialize in modern web technologies and love staying up-to-date with the latest trends and best practices. Whether it's crafting pixel-perfect interfaces or architecting robust backend systems, I bring dedication and creativity to every project.</p>
+            <p>I’m an aspiring software and web developer currently working toward my certification, with a strong interest in frontend development. I genuinely enjoy learning how computers and software work and love turning ideas into interactive, user-friendly experiences.</p>
+            <p>What started as curiosity has grown into a real passion for building things on the web. I’m always eager to learn new technologies, improve my skills, and gain hands-on experience, and I’m excited about opportunities that allow me to grow, collaborate, and continue learning as I move forward in my career.</p>
             <p> When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
           </div>
 
