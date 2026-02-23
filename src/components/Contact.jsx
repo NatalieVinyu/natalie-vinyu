@@ -31,15 +31,15 @@ function Contact() {
   }
 
   return (
-    <div id="contact" className='dark:bg-black dark:text-white scroll-smooth'>
+    <div id="contact" className='dark:bg-slate-950 dark:text-white scroll-smooth'>
       <section className='max-w-4xl mx-auto px-8 py-16'>
         <div className='flex flex-col items-center'>
           <div className='text-2xl'>Get In Touch</div>
           <div className='w-20 h-1 bg-fuchsia-200 mt-2 rounded-full'></div>
         </div>
 
-        <div className='text-center pt-6'>
-          <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
+        <div className='text-center  pt-6'>
+          <p className='dark:text-gray-400'>Have a project in mind or just want to say hi? Feel free to reach out!</p>
         </div>
 
         <div className='grid md:grid-cols-3 gap-6 my-12'>
@@ -69,7 +69,7 @@ function Contact() {
         </div>
 
         {/* Form */}
-        <form id='contact-form' onSubmit={handleSubmit} className='border-2 border-fuchsia-200 rounded-xl shadow-lg p-8 mb-12'>
+        <form id='contact-form' onSubmit={handleSubmit} className='border-2 border-fuchsia-300 rounded-xl shadow-lg p-8 mb-12'>
           <div className='grid md:grid-cols-2 gap-6'>
 
             {/* Name Field */}
