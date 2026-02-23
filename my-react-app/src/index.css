@@ -5,4 +5,11 @@ html.dark {
   color: white;
 }
 
+html.dark .home-section a {
+  color: black;
+}
+
+
+
+
 

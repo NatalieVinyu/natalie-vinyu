@@ -12,9 +12,9 @@ function Home() {
     }, [theme]);
 
   return (
-    <div>
+    <div id='home'>
       {/* LIGHTMODE/DARKMODE */}
-      <div className='flex justify-end'>
+      <div className='flex justify-end py-4 md:pr-4'>
         <button 
         type='button'
         onClick={() => setTheme(theme === "light" ? "dark" : "light")} 
@@ -23,7 +23,7 @@ function Home() {
         </button>
       </div>
 
-      <section className='h-screen text-black dark:bg-black dark:text-white  space-y-10 px-6 py-12 md:px-20 md:py-24 grid grid-cols-3'>
+      <section className='home-section h-screen space-y-10 px-6 py-12 md:px-20 md:py-24 grid grid-cols-3'>
         <div className='col-span-2 flex flex-col justify-center'>
           <div className='space-y-6'>
             <div className='text-4xl md:text-7xl font-bold'>Hi, my name is <span className='text-fuchsia-300'>Natalie Vinyu</span></div>
@@ -42,12 +42,12 @@ function Home() {
           </div>
 
           <div className='flex md:flex-row gap-6 mt-6'>
-            <button className='px-6 py-3 bg-fuchsia-200 rounded-lg cursor-pointer'>
-              <a href="">Download CV</a>
-            </button>
-            <button className='px-6 py-3 bg-fuchsia-100 rounded-lg cursor-pointer'>
-              <a href="https://www.linkedin.com/in/natalie-vinyu">Let's Connect</a>
-            </button>
+            <a className='px-6 py-3 bg-fuchsia-200 rounded-lg cursor-pointer'>
+              Download CV
+            </a>
+            <a href="https://www.linkedin.com/in/natalie-vinyu" className='px-6 py-3 bg-fuchsia-100 rounded-lg cursor-pointer'>
+              Let's Connect
+            </a>
           </div>
         </div>
 
