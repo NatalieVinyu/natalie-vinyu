@@ -40,13 +40,13 @@ function About() {
             <div className='flex border-2 border-fuchsia-300 rounded-xl p-5' key={index}>
               
               {/* LUCIDE REACT ICONS */}
-              <div className='icon bg-fuchsia-100 rounded-xl content-center text-2xl p-4 mr-4'>
-                <p className='dark:text-black'>{item.icon}</p>
+              <div className=' dark:bg-slate-500 bg-fuchsia-100 rounded-xl content-center text-2xl p-4 mr-4'>
+                <p>{item.icon}</p>
               </div>
                 
               <div>
                 <h3 className='text-lg font-semibold'>{item.title}</h3>
-                <p className='text-gray-600'>{item.description}</p>
+                <p className='text-gray-400'>{item.description}</p>
               </div>
             </div>
             ))}
