@@ -5,12 +5,14 @@ import { FiGithub, FiLinkedin } from 'react-icons/fi'
 function Footer() {
   return (
     <div>
-      <footer className='py-12 px-6 border-fuchsia-200 bg-fuchsia-50 dark:bg-gray-700 dark:text-white'>
+      {/* Footer */}
+      <footer className='py-12 px-6 border-fuchsia-200 bg-fuchsia-50 dark:bg-slate-900 dark:text-white'>
+
         <div className='max-w-6xl mx-auto'>
           <div className='flex flex-col md:flex-row items-center justify-between gap-6'>
             <div className='text-center md:text-left'>
               <h3 className='text-2xl font-bold mb-2'>Natalie Vinyu</h3>
-              <p className='text-sm text-gray-600'>Building digital experiences</p>
+              <p className='text-sm text-gray-400'>Building digital experiences</p>
             </div>
 
             <div className='flex gap-4'>
