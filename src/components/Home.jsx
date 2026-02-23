@@ -5,6 +5,7 @@ import Typewriter from 'typewriter-effect'
 import image from '../assets/natalie.jpg'
 
 function Home() {
+  //TRACK LIGHT/DARK MODE
   const [theme, setTheme] = useState("light")
 
   useEffect(() => {
@@ -20,7 +21,8 @@ function Home() {
     }, [theme]);
 
   return (
-    <div id='home' className='scroll-smooth dark:bg-gray-700 text-white'>
+    <div id='home' className='scroll-smooth dark:bg-slate-950 text-white'>
+      
       {/* LIGHTMODE/DARKMODE */}
       <div className='flex justify-end py-4 md:pr-4'>
         <button 
@@ -35,11 +37,14 @@ function Home() {
         </button>
       </div>
 
-      <section className='home-section h-screen space-y-10 px-6 py-12 md:px-20 md:py-24 grid grid-cols-3'>
+      {/* HOME SECTION */}
+      <section className='space-y-10 px-6 py-12 md:px-20 md:py-24 grid grid-cols-1 md:grid-cols-3 gap-10 items-center'>
         <div className='col-span-2 flex flex-col justify-center'>
           <div className='space-y-6'>
-            <div className='text-4xl md:text-7xl font-bold'>Hi, my name is <span className='text-fuchsia-300'>Natalie Vinyu</span></div>
-            <span className='inline-flex gap-4 text-3xl md:text-5xl'>
+            <div className='text-4xl sm:text-2xl md:text-7xl font-bold'>Hi, my name is <span className='text-fuchsia-300'>Natalie Vinyu</span></div>
+            
+            {/* TYPEWRITER EFFECT */}
+            <span className='inline-flex gap-2 text-3xl md:text-5xl'>
               I'm a{""}
               <Typewriter
               options={{
@@ -67,7 +72,7 @@ function Home() {
         </div>
 
         <div className='col-span-1'>
-          <img src={image} alt="" className='w-85 h-110 rounded-lg shadow-lg' />
+          <img src={image} alt="" className='w-full max-w-sm md:max-w-md h-auto rounded-lg shadow-lg' />
         </div>
         
       </section>
