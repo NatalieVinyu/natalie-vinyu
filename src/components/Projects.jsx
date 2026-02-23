@@ -33,25 +33,26 @@ function Projects() {
   ]
 
   return (
-    <div id='projects' className='dark:bg-gray-700 dark:text-white scroll-smooth bg-fuchsia-50'>
-      <section className='max-w-7xl mx-auto px-8 py-24'>
+    <div id='projects' className='dark:bg-slate-900 dark:text-white scroll-smooth bg-fuchsia-50'>
+      <section className='max-w-7xl mx-auto px-8 py-18 sm:py-10'>
         <div className='flex flex-col items-center pb-4 '>
           <h2 className='text-2xl'>Projects</h2>
           <div className='w-20 h-1 bg-fuchsia-300 rounded-full'></div>
         </div>
 
         <div className='text-center pb-10'>
-          <p className='text-gray-700'>Here are some of my recent projects showcasing my skills and passion for web development</p>
+          <p className='text-gray-700 dark:text-gray-400'>Here are some of my recent projects showcasing my skills and passion for web development</p>
         </div>
 
         <div className='pt-6'>
           <div className='grid md:grid-cols-3 gap-4'>
             {myprojects.map((item, index) => (
+              
               <div className='border-2 border-fuchsia-300 rounded-xl p-8 shadow-lg' key={index}>
                 <img src={item.image} alt={item.title} className='transition duration-700 ease-in-out transform hover:scale-105 shadow-lg rounded-lg' />
 
                 <h3 className='text-2xl font-bold pt-4'>{item.title}</h3>
-                <p className='pt-4 text-gray-700'>{item.description}</p>
+                <p className='pt-4 text-gray-700 dark:text-gray-400'>{item.description}</p>
 
                 <div className='pt-6'>
                   <ul className='flex gap-4'>
@@ -60,7 +61,7 @@ function Projects() {
                   ))}</ul>
                 </div>
 
-                <div className='flex gap-4 pt-8 dark:text-black'>
+                <div className='flex gap-4 pt-8'>
                   <a 
                     href={item.codeLink} 
                     target='_blank'
@@ -73,7 +74,7 @@ function Projects() {
                     href={item.demoLink}
                     target='_blank'
                     rel='noopener noreferrer' 
-                    className='w-full flex items-center justify-center gap-2 border-2 border-fuchsia-300 bg-fuchsia-200 rounded-xl py-2 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer'>
+                    className='w-full flex items-center justify-center gap-2 border-2 border-fuchsia-300 bg-fuchsia-200 dark:text-black rounded-xl py-2 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer'>
                     <ExternalLink />
                     <span>Demo</span>
                   </a>
