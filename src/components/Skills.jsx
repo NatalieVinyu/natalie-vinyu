@@ -17,7 +17,7 @@ function Skills() {
   ]
 
   return (
-    <div className='dark:bg-slate-950 dark:text-white scroll-smooth '>
+    <div id='skills' className='dark:bg-slate-950 dark:text-white scroll-smooth '>
 
       {/* SKILLS SECTION */}
       <section className='max-w-7xl max-w-sm mx-auto px-8 py-24'>
