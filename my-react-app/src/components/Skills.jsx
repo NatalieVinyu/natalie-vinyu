@@ -17,7 +17,7 @@ function Skills() {
   ]
 
   return (
-    <div className='max-w-7xl mx-auto px-8 py-24'>
+    <div className='skills-section scroll-smooth max-w-7xl mx-auto px-8 py-24'>
       <div className='flex flex-col items-center'>
         <h2 className='text-3xl font-bold'>Skills and Technologies</h2>
         <div className='w-50 h-1 mt-2 rounded-full bg-fuchsia-200'></div>

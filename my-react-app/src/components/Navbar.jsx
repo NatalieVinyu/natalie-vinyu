@@ -2,9 +2,9 @@ import React from 'react'
 
 function Navbar() {
   return (
-     <div className='w-full bg-transparent backdrop-blur-md shadow-sm p-4 z-10 top-0'>
+     <div className='navbar w-full bg-transparent backdrop-blur-md shadow-sm p-4 z-10 top-0'>
       {/* NAVIGATION CONTAINER */}
-      <nav className='container'>
+      <nav>
 
           {/* NAVIGATION LINKS */}
           <ul className='flex space-x-14 justify-center'>

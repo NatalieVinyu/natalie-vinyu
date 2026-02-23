@@ -12,7 +12,7 @@ function Home() {
     }, [theme]);
 
   return (
-    <div id='home'>
+    <div id='home' className='scroll-smooth'>
       {/* LIGHTMODE/DARKMODE */}
       <div className='flex justify-end py-4 md:pr-4'>
         <button 
@@ -42,10 +42,10 @@ function Home() {
           </div>
 
           <div className='flex md:flex-row gap-6 mt-6'>
-            <a className='px-6 py-3 bg-fuchsia-200 rounded-lg cursor-pointer'>
+            <a className='px-6 py-3 bg-fuchsia-300 rounded-lg cursor-pointer'>
               Download CV
             </a>
-            <a href="https://www.linkedin.com/in/natalie-vinyu" className='px-6 py-3 bg-fuchsia-100 rounded-lg cursor-pointer'>
+            <a href="https://www.linkedin.com/in/natalie-vinyu" className='px-6 py-3 bg-fuchsia-100 border-2 border-fuchsia-300 rounded-lg cursor-pointer'>
               Let's Connect
             </a>
           </div>

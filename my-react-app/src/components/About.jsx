@@ -1,8 +1,6 @@
 import React from 'react'
 import { CodeXml, Sparkles, Rocket } from 'lucide-react';
 
-
-
 function About() {
   const highlights = [
     { 
@@ -23,7 +21,7 @@ function About() {
   ]
 
   return (
-    <div className='bg-fuchsia-50'>
+    <div className='about-section scroll-smooth bg-fuchsia-50'>
       <section id='about' className='flex flex-col items-center max-w-7xl mx-auto px-8 py-24 '>
         <div className='pb-6'>
           <h1 className='text-4xl font-bold pb-2'>About Me</h1>
@@ -42,7 +40,7 @@ function About() {
             <div className='flex border-2 border-fuchsia-300 rounded-xl p-5' key={index}>
               
               {/* LUCIDE REACT ICONS */}
-              <div className='bg-fuchsia-100 rounded-xl content-center text-2xl p-4 mr-4'>
+              <div className='icon bg-fuchsia-100 rounded-xl content-center text-2xl p-4 mr-4'>
                 <p>{item.icon}</p>
               </div>
                 
