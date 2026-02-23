@@ -41,10 +41,10 @@ function Home() {
       <section className='space-y-10 px-6 py-12 md:px-20 md:py-24 grid grid-cols-1 md:grid-cols-3 gap-10 items-center'>
         <div className='col-span-2 flex flex-col justify-center'>
           <div className='space-y-6'>
-            <div className='text-4xl sm:text-2xl md:text-7xl font-bold'>Hi, my name is <span className='text-fuchsia-300'>Natalie Vinyu</span></div>
+            <div className='text-4xl sm:text-2xl md:text-7xl font-bold'>Hi, my name is <span className='bg-gradient-to-r from-fuchsia-300 to-purple-400 text-transparent bg-clip-text animate-gradient-x bg-[length:200%_200%]'>Natalie Vinyu</span></div>
             
             {/* TYPEWRITER EFFECT */}
-            <span className='inline-flex gap-2 text-3xl md:text-5xl'>
+            <span className='inline-flex gap-2 sm:text-4xl md:text-5xl'>
               I'm a{""}
               <Typewriter
               options={{
