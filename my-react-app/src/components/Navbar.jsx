@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-     <div className='navbar w-full bg-transparent backdrop-blur-md shadow-sm p-4 z-10 top-0'>
+     <div className=' dark:bg-gray-700 text-white w-full bg-transparent backdrop-blur-md shadow-sm p-4 z-10 top-0'>
       {/* NAVIGATION CONTAINER */}
       <nav>
 

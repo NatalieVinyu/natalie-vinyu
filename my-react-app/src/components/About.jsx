@@ -21,7 +21,7 @@ function About() {
   ]
 
   return (
-    <div className='about-section scroll-smooth bg-fuchsia-50'>
+    <div className='about-section scroll-smooth bg-fuchsia-50 dark:bg-gray-900 dark:text-white'>
       <section id='about' className='flex flex-col items-center max-w-7xl mx-auto px-8 py-24 '>
         <div className='pb-6'>
           <h1 className='text-4xl font-bold pb-2'>About Me</h1>
@@ -41,7 +41,7 @@ function About() {
               
               {/* LUCIDE REACT ICONS */}
               <div className='icon bg-fuchsia-100 rounded-xl content-center text-2xl p-4 mr-4'>
-                <p>{item.icon}</p>
+                <p className='dark:text-black'>{item.icon}</p>
               </div>
                 
               <div>

@@ -33,7 +33,7 @@ function Projects() {
   ]
 
   return (
-    <div id='projects' className='projects-section scroll-smooth bg-fuchsia-50'>
+    <div id='projects' className='dark:bg-gray-700 dark:text-white scroll-smooth bg-fuchsia-50'>
       <section className='max-w-7xl mx-auto px-8 py-24'>
         <div className='flex flex-col items-center pb-4 '>
           <h2 className='text-2xl'>Projects</h2>
@@ -60,12 +60,12 @@ function Projects() {
                   ))}</ul>
                 </div>
 
-                <div className='flex gap-4 pt-8'>
+                <div className='flex gap-4 pt-8 dark:text-black'>
                   <a 
                     href={item.codeLink} 
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='code-link w-full flex items-center justify-center gap-2 border-2 border-fuchsia-300 rounded-xl py-2 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer'>
+                    className='w-full flex items-center justify-center gap-2 border-2 border-fuchsia-300 rounded-xl py-2 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer'>
                     <Code />
                     <span>Code</span>
                   </a>
@@ -73,7 +73,7 @@ function Projects() {
                     href={item.demoLink}
                     target='_blank'
                     rel='noopener noreferrer' 
-                    className='demo-link w-full flex items-center justify-center gap-2 border-2 border-fuchsia-300 bg-fuchsia-200 rounded-xl py-2 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer'>
+                    className='w-full flex items-center justify-center gap-2 border-2 border-fuchsia-300 bg-fuchsia-200 rounded-xl py-2 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer'>
                     <ExternalLink />
                     <span>Demo</span>
                   </a>

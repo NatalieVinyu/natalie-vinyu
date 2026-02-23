@@ -8,17 +8,29 @@ function Home() {
   const [theme, setTheme] = useState("light")
 
   useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme(storedTheme);
+    }
+  }, []);
+
+    useEffect(() => {
       document.documentElement.classList.toggle("dark", theme === "dark");
+      localStorage.setItem("theme", theme);
     }, [theme]);
 
   return (
-    <div id='home' className='scroll-smooth'>
+    <div id='home' className='scroll-smooth dark:bg-gray-700 text-white'>
       {/* LIGHTMODE/DARKMODE */}
       <div className='flex justify-end py-4 md:pr-4'>
         <button 
         type='button'
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")} 
-        className='rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 p-2'>
+        onClick={() => {
+          const newTheme = theme === "light" ? "dark" : "light";
+          console.log("Toggling theme:", newTheme);
+          setTheme(newTheme);
+        }}
+        className='rounded-full hover:bg-gray-200 dark:bg-gray-700 p-2'>
             {theme === "light" ? <Moon /> : <Sun />}
         </button>
       </div>
@@ -27,7 +39,7 @@ function Home() {
         <div className='col-span-2 flex flex-col justify-center'>
           <div className='space-y-6'>
             <div className='text-4xl md:text-7xl font-bold'>Hi, my name is <span className='text-fuchsia-300'>Natalie Vinyu</span></div>
-            <p className='flex gap-4 text-3xl md:text-5xl'>
+            <span className='inline-flex gap-4 text-3xl md:text-5xl'>
               I'm a{""}
               <Typewriter
               options={{
@@ -38,10 +50,10 @@ function Home() {
               cursor: '|',
               delay: 75,
             }}
-            /></p>
+            /></span>
           </div>
 
-          <div className='flex md:flex-row gap-6 mt-6'>
+          <div className='flex md:flex-row gap-6 mt-6 dark:text-black'>
             <a 
               href='/assets/Natalie Vinyu CV.pdf'
               download
