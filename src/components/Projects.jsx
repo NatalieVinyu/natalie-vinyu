@@ -5,6 +5,7 @@ import project2 from '../assets/project2.png'
 import project3 from '../assets/project3.png'
 
 function Projects() {
+  // ARRAY OF PROJECTS FOR PROJECTS SECTION
   const myprojects = [
     {
       image: project1,
@@ -34,6 +35,8 @@ function Projects() {
 
   return (
     <div id='projects' className='dark:bg-slate-900 dark:text-white scroll-smooth bg-fuchsia-50'>
+      
+      {/* PROJECTS SECTION */}
       <section className='max-w-7xl mx-auto px-8 py-18 sm:py-10'>
 
         <div className='flex flex-col items-center pb-4 '>

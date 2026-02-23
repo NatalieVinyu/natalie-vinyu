@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Skills() {
+  // ARRAY OF SKILLS FOR SKILLS SECTION
   const skills = [
     {
       title: "Frontend",

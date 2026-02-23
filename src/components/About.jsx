@@ -3,6 +3,7 @@ import { CodeXml, Sparkles, Rocket } from 'lucide-react';
 
 function About() {
   const highlights = [
+    // ARRAY OF HIGHLIGHTS FOR ABOUT SECTION 
     { 
       title: "Clean Code",
       description: "Writing maintainable, scalable code that follows best practices",
@@ -22,6 +23,8 @@ function About() {
 
   return (
     <div className='about-section scroll-smooth bg-fuchsia-50 dark:bg-gray-900 dark:text-white'>
+
+      {/* ABOUT ME SECTION */}
       <section id='about' className='flex flex-col items-center max-w-7xl mx-auto px-8 py-24 '>
         
         <div className='flex flex-col items-center pb-6'>
