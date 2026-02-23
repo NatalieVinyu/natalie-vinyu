@@ -33,13 +33,14 @@ function Contact() {
   return (
     <div id="contact" className='dark:bg-slate-950 dark:text-white scroll-smooth'>
       <section className='max-w-4xl mx-auto px-8 py-16'>
+
         <div className='flex flex-col items-center'>
-          <div className='text-2xl'>Get In Touch</div>
-          <div className='w-20 h-1 bg-fuchsia-200 mt-2 rounded-full'></div>
+          <div className='sm:text-2xl md:text-3xl'>Get In Touch</div>
+          <div className='w-25 h-1 bg-fuchsia-200 mt-2 rounded-full'></div>
         </div>
 
         <div className='text-center  pt-6'>
-          <p className='dark:text-gray-400'>Have a project in mind or just want to say hi? Feel free to reach out!</p>
+          <p className='text-gray-700 dark:text-gray-400'>Have a project in mind or just want to say hi? Feel free to reach out!</p>
         </div>
 
         <div className='grid md:grid-cols-3 gap-6 my-12'>

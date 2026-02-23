@@ -2,12 +2,12 @@ import React from 'react'
 
 function Navbar() {
   return (
-     <div className='dark:bg-slate-900 text-white shadow-sm p-4 z-10'>
+     <div className='dark:bg-slate-900 dark:text-white shadow-sm p-4 z-10'>
       {/* NAVIGATION CONTAINER */}
       <nav>
 
           {/* NAVIGATION LINKS */}
-          <ul className='flex flex-col items-center space-y-4 md:flex-row md:justify-center md:gap-14'>
+          <ul className='flex flex-col items-center md:flex-row md:justify-center md:gap-14'>
             <li className='duration-500 transition hover:text-fuchsia-300 transform hover:scale-125'>
               <a href='#home'>
                 Home

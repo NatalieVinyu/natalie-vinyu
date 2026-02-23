@@ -23,9 +23,10 @@ function About() {
   return (
     <div className='about-section scroll-smooth bg-fuchsia-50 dark:bg-gray-900 dark:text-white'>
       <section id='about' className='flex flex-col items-center max-w-7xl mx-auto px-8 py-24 '>
-        <div className='pb-6'>
-          <h1 className='text-4xl font-bold pb-2'>About Me</h1>
-          <div className='w-full h-1 bg-fuchsia-200 rounded-full'></div>
+        
+        <div className='flex flex-col items-center pb-6'>
+          <h1 className='sm:text-2xl md:text-3xl font-bold pb-2'>About Me</h1>
+          <div className='w-25 h-1 bg-fuchsia-200 rounded-full'></div>
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-16'>

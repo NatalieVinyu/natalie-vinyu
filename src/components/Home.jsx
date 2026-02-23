@@ -21,7 +21,7 @@ function Home() {
     }, [theme]);
 
   return (
-    <div id='home' className='scroll-smooth dark:bg-slate-950 text-white'>
+    <div id='home' className='scroll-smooth dark:bg-slate-950 dark:text-white'>
       
       {/* LIGHTMODE/DARKMODE */}
       <div className='flex justify-end py-4 md:pr-4'>

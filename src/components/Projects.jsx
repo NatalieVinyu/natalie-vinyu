@@ -35,9 +35,10 @@ function Projects() {
   return (
     <div id='projects' className='dark:bg-slate-900 dark:text-white scroll-smooth bg-fuchsia-50'>
       <section className='max-w-7xl mx-auto px-8 py-18 sm:py-10'>
+
         <div className='flex flex-col items-center pb-4 '>
-          <h2 className='text-2xl'>Projects</h2>
-          <div className='w-20 h-1 bg-fuchsia-300 rounded-full'></div>
+          <h2 className='sm:text-2xl md:text-3xl'>Projects</h2>
+          <div className='w-25 h-1 bg-fuchsia-300 rounded-full'></div>
         </div>
 
         <div className='text-center pb-10'>
